@@ -21,10 +21,11 @@ const enterYear = +prompt('Введіть рік')
         console.log('Некоректні дані');
     } else {
         if ((enterYear % 4 === 0 && enterYear % 100 !== 0) || enterYear % 400 === 0) {
-           console.log('Високосний рік')
+           console.log('Високосний рік');
     } else
-    if (enterYear % 4 !== 0 && enterYear % 400 !== 0)
-        console.log('Не високосний рік')
+    if (enterYear % 4 !== 0 && enterYear % 400 !== 0) {
+        console.log('Не високосний рік');
+    }
 }
-    
+
     
