@@ -14,7 +14,6 @@ if (Number.isNaN(enterNumber)) {
     console.log('Bizz');
     }
     } 
-    */
 
 // 2 завдання
 const enterYear = +prompt('Введіть рік')
