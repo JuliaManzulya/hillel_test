@@ -1,17 +1,16 @@
-// console.log('Hey, this is my first JS program');
-/* const enterNumber = +prompt('Введіть число');
+const enterNumber = +prompt('Введіть число');
 console.log(enterNumber);
 if (Number.isNaN(enterNumber)) {
     console.log('Некоректні дані');
 } else {
     if (enterNumber % 3 === 0 && enterNumber % 5 === 0) {
-        console.log('FizzBizz');
+        console.log('FizzBuzz');
     } else 
     if (enterNumber % 3 === 0) {
       console.log('Fizz');  
     } else 
     if (enterNumber % 5 === 0) {
-    console.log('Bizz');
+    console.log('Buzz');
     }
     } 
 
