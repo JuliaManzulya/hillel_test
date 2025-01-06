@@ -1,4 +1,5 @@
-const enterNumber = +prompt('Введіть число');
+/* завдання 1
+const enterNumber = +prmpt('Введіть число');
 console.log(enterNumber);
 if (Number.isNaN(enterNumber)) {
     console.log('Некоректні дані');
@@ -27,5 +28,23 @@ const enterYear = +prompt('Введіть рік')
         console.log('Не високосний рік');
     }
 }
-
+*/
     
+// завдання 3
+const userInput = prompt("Введіть ваше число:"); 
+const n = parseInt(userInput, 10); 
+if (!isNaN(n) && n >= 0) { 
+    const word = getYearWord(n);
+    console.log(`Вам ${n} ${word}.`); 
+} else {
+    console.log("Будь ласка, введіть коректне ціле число."); 
+}
+function getYearWord(n) {
+    if (n % 10 === 1 && n % 100 !== 11) {
+        return "рік"; // Например: 1, 21, 31
+    } else if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) {
+        return "роки"; // Например: 2, 3, 4, 22, 23
+    } else {
+        return "років"; // Например: 5, 6, 11, 12
+    }
+}
